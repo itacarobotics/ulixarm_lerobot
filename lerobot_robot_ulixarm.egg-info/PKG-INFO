@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: lerobot_robot_ulixarm
+Version: 0.1.0
+Summary: LeRobot plugin for the Itaca Robotics Ulix Arm (via ulixpy)
+Requires-Python: >=3.10
+Requires-Dist: lerobot
+Requires-Dist: numpy
+Requires-Dist: ulixpy @ git+https://github.com/itacarobotics/ulixpy.git

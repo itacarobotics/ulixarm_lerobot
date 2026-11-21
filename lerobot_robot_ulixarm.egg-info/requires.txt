@@ -1,0 +1,3 @@
+lerobot
+numpy
+ulixpy @ git+https://github.com/itacarobotics/ulixpy.git

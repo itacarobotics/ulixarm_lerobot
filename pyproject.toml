@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# The "lerobot_robot_" prefix is how LeRobot auto-discovers this plugin.
+name = "lerobot_robot_ulixarm"
+version = "0.1.0"
+description = "LeRobot plugin for the Itaca Robotics Ulix Arm (via ulixpy)"
+requires-python = ">=3.10"
+dependencies = [
+    "lerobot",
+    "numpy",
+    # Not on PyPI; builds from source. Needs: apt install build-essential cmake git pkg-config libeigen3-dev libserialport-dev
+    "ulixpy @ git+https://github.com/itacarobotics/ulixpy.git",
+]
+
+[tool.setuptools]
+packages = ["lerobot_robot_ulixarm"]
